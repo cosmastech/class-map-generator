@@ -233,7 +233,7 @@ class ClassMapGenerator
                 $subNamespace = ('' !== $baseNamespace) ? substr($class, strlen($baseNamespace)) : $class;
                 $subPath = str_replace('\\', DIRECTORY_SEPARATOR, $subNamespace);
             } else {
-                throw new \InvalidArgumentException('$namespaceType must be "psr-0" or "psr-4"');
+                throw new \InvalidArgumentException("$namespaceType must be \"psr-0\" or \"psr-4\"");
             }
             if ($subPath === $realSubPath) {
                 $validClasses[] = $class;
